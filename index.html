@@ -28,7 +28,7 @@
                         <input value={flipped ? minutes : Math.round(minutes / 60)} id="hours" placeholder="Hours" type="number" onChange={onChange} disabled={!flipped} />
                     </div>
                     <button onClick={reset}>Reset</button>
-                    <button onClick={onFlip}>Flip</button>
+                    <button onClick={onFlip}>{flipped ? "Turn back" : "Invert"}</button>
                 </div>
             );
         }
